@@ -112,7 +112,7 @@
             color: #fff;
             padding: 0 calc(24 / 16 * 1rem);
             background-color: var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
+            border-radius: 10px;
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -128,7 +128,7 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
+                border-radius: 10px;
                 transition: width 0.3s;
             }
 
