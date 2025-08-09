@@ -12,8 +12,9 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #logos-857 {
-        padding: var(--sectionPadding);
-        background-color: #f7f7f7;
+        padding: 2rem 0;
+        background: linear-gradient(to bottom, #05080F 70%, #7620EE 120%);
+        border-top: solid 1px #7620EE;
 
         .cs-container {
             width: 100%;
@@ -24,7 +25,7 @@
             flex-direction: column;
             align-items: center;
             /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
+            gap: clamp(2rem, 6vw, 4rem);
         }
 
         .cs-content {
@@ -37,8 +38,23 @@
             align-items: center;
         }
 
+        .cs-topper {
+            font-family: "Circular Bold";
+            text-shadow:
+                0 0 1px #ffffff21,
+                0 0 1px #ffffff21,
+                0 0 1px #ffffff21,
+                0 0 1px #ffffff21;
+        }
+
         .cs-title {
             margin: 0;
+            font-family: "Circular Bold";
+            text-shadow:
+                0 0 1px #7620EE,
+                0 0 3px #7620EE,
+                0 0 4px #7620EE,
+                0 0 1px #7620EE;
         }
 
         .cs-logo-group {
@@ -46,15 +62,22 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            gap: calc(40 / 16 * 1rem);
+            gap: calc(80 / 16 * 1rem);
+            width: 110%;
+            height: 102%;
         }
 
         .cs-logo {
-            width: 40%;
-            max-width: calc(120 / 16 * 1rem);
-            height: auto;
+            width: 100%;
+            max-width: 9.5rem;
+            height: 2em;
             margin: 0;
             display: block;
+            transition: ease 0.3s;
+
+            &:hover {
+                max-width: 10rem;
+            }
         }
     }
 }
@@ -62,8 +85,13 @@
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #logos-857 {
+
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
+        }
+
+        .cs-logo-group {
+            gap: calc(160 / 16 * 1rem);
         }
     }
 }
@@ -76,7 +104,8 @@
 @media only screen and (min-width: 0rem) {
     #sbs-72 {
         padding: var(--sectionPadding);
-        background-color: #1a1a1a;
+        background-color: #0B0316;
+        border-top: solid 1px #7620EE;
 
         .cs-container {
             width: 100%;
@@ -130,7 +159,7 @@
             min-width: calc(150 / 16 * 1rem);
             padding: 0 calc(24 / 16 * 1rem);
             background-color: var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
+            border-radius: 10px;
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -147,7 +176,7 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
+                border-radius: 10px;
                 transition: width 0.3s;
             }
 
@@ -166,7 +195,7 @@
             display: block;
             /* width divided by height */
             aspect-ratio: 312/335;
-            border-radius: calc(16 / 16 * 1rem);
+            border-radius: 10px;
             z-index: 1;
 
             &:before {
@@ -177,7 +206,7 @@
                 height: clamp(12.625rem, 25vw, 15.5rem);
                 background: var(--primary);
                 opacity: 1;
-                border-radius: calc(16 / 16 * 1rem);
+                border-radius: 10px;
                 position: absolute;
                 display: block;
                 /* 16px -20px */
@@ -194,7 +223,7 @@
                 height: clamp(12.625rem, 25vw, 15.5rem);
                 background: var(--primary);
                 opacity: 1;
-                border-radius: calc(16 / 16 * 1rem);
+                border-radius: 10px;
                 position: absolute;
                 display: block;
                 /* 16px -20px */
@@ -211,7 +240,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                border-radius: calc(16 / 16 * 1rem);
+                border-radius: 10px;
             }
         }
     }
@@ -1009,7 +1038,7 @@
             list-style: none;
             width: 100%;
             background-color: #303044;
-            border-radius: calc(8 / 16 * 1rem);
+            border-radius: 10px;
             padding: 0;
             box-sizing: border-box;
             transition: border-bottom 0.3s;
